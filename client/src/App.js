@@ -7,7 +7,7 @@ function App() {
   const [user, setUser] = useState();
 
   const getUser = async () => {
-    const response = await axios.get("http://localhost:4000/api/v1/user");
+    const response = await axios.get("https://basicexpressdeploy.herokuapp.com/api/v1/user");
     console.log(response);
     setUser(response.data.data);
   };
